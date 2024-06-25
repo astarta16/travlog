@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../font/Circular\ Std\ Font.otf") format("opentype");
+}
+
+body {
+  font-family: "CircularStd", sans-serif;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -111,5 +120,48 @@
 
   .login {
     margin-left: 10px;
+  }
+}
+
+
+
+.banner-section {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-side, .right-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-side img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+      flex-direction: column;  
+  }
+
+  .right-side, .left-side {
+      flex: none;  
+      width: 100%; 
+      padding: 10px; 
+      order: 1; 
+  }
+
+  .right-side {
+      order: 0;  
+  }
+
+  .right-side img {
+      max-width: 100%; 
   }
 }
