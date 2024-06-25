@@ -1,6 +1,6 @@
 @font-face {
   font-family: "MyCustomFont";
-  src: url("../font/Circular\ Std\ Font.otf") format("opentype");
+  src: url("../font/Circular Std Font.otf") format("opentype");
 }
 
 body {
@@ -28,12 +28,57 @@ body {
   font-size: 14px;
 }
 
-.signup {
+.signup,
+.get-started {
   background-color: #5d50c6;
   color: white;
   border-radius: 100px;
   padding: 16px 32px;
-  margin-left: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.login {
+  margin-right: 20px;
+}
+
+.get-started {
+  margin-right: 10px;
+}
+
+.banner-text h1 {
+  font-weight: 700;
+  font-size: 69px;
+  color: black;
+}
+
+.banner-text h1 span {
+  color: #f85e9f;
+}
+
+.banner-text p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #19182580;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.watch-demo {
+  border-radius: 100px;
+  padding: 15px 32px;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eeeeee;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (max-width: 767px) {
@@ -45,6 +90,15 @@ body {
   .menu {
     width: 48px;
     height: 48px;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -68,6 +122,15 @@ body {
 
   .navigation {
     display: none;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -121,19 +184,22 @@ body {
   .login {
     margin-left: 10px;
   }
+
+  .banner-text {
+    text-align: left;
+  }
 }
-
-
 
 .banner-section {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
 
-.left-side, .right-side {
+.left-side,
+.right-side {
   flex: 1;
   padding: 20px;
 }
@@ -147,21 +213,23 @@ body {
 
 @media (max-width: 768px) {
   .banner-section {
-      flex-direction: column;  
+    flex-direction: column;
   }
 
-  .right-side, .left-side {
-      flex: none;  
-      width: 100%; 
-      padding: 10px; 
-      order: 1; 
+  .right-side,
+  .left-side {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+    order: 1;
   }
 
   .right-side {
-      order: 0;  
+    order: 0;
   }
 
   .right-side img {
-      max-width: 100%; 
+    max-width: 100%;
   }
 }
+
