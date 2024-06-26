@@ -463,22 +463,80 @@ body {
   font-size: 18px;
 }
 
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .travel-point {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .travel-content, .travel-image {
+      width: 100%;
+      text-align: center;
+  }
+
+  .travel-content h2, .travel-content h3, .travel-content p {
+      margin: 0 auto;
+  }
+
+  .statistics {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .stat-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      min-width: 50%; 
+  }
+
+  .stat-item {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  .stat-item h4, .stat-item p {
+      text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .travel-point {
       flex-direction: column;
       align-items: center;
+      padding: 20px;
   }
 
   .travel-content, .travel-image {
       width: 100%; 
+      text-align: center;
+  }
+
+  .travel-content h2, .travel-content h3, .travel-content p {
+      margin: 0 auto;
+      max-width: 90%;
   }
 
   .statistics {
       flex-direction: column;
+      align-items: center;
   }
 
   .stat-col {
       display: block; 
+      width: 100%; 
+  }
+
+  .stat-item {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  .stat-item h4, .stat-item p {
+      text-align: center;
   }
 }
-
