@@ -327,6 +327,7 @@ body {
   margin-top: 10px;
 }
 
+
 .destination-cards {
   display: flex;
   justify-content: space-between;
@@ -617,7 +618,6 @@ body {
   color: #19182580;
 }
 
-
 .footer-top {
   display: flex;
   justify-content: space-between;
@@ -652,7 +652,8 @@ body {
 
 .footer-column h4 {
   color: #000;
-  font-size: 16px;
+  font-size: 23px;
+  font-weight: 700
 }
 
 .footer-column ul {
